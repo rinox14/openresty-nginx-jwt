@@ -1,0 +1,15 @@
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - node-api
+    environment:
+      JWT_SECRET: secret_12345345236256asdf2345
+  
+  node-api:
+    build: ./node-api
+    container_name: node-api
+    environment:
+      JWT_SECRET: secret_12345345236256asdf2345
