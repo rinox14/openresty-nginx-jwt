@@ -27,9 +27,7 @@ docker-compose up
 ### Test with curl
 - Get JWT Token
     ```bash
-    # Get token
     curl http://localhost:8080/api/login 
-      # return=> {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJpbm9sdXYiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Njk2MTg0NDksImV4cCI6MTc2OTYyMjA0OX0.lcFTD8-25olSe_EbbSPySQaHYJLPsSBdRFmf8QaFLBs"}
     ```
 
 - Get route public
